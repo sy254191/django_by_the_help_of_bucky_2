@@ -1,0 +1,6 @@
+<h1>this is the category to choose from:-</h1>
+<ul>
+   {% for album in all_albums %}
+   <li><a href="/music/{{album.id}}/">{{ album.genre}}</a></li>
+   {% endfor %}
+</ul>
